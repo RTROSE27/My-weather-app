@@ -1,0 +1,68 @@
+body {
+  font-family: "Delicious Handrawn", cursive;
+  font-family: "Roboto", sans-serif;
+  color: rgb(135, 135, 135);
+}
+
+h1 {
+  color: rgb(135, 135, 135);
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  font-family: "Delicious Handrawn", cursive;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+ul {
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+li {
+  color: rgb(135, 135, 135);
+  display: block;
+  font-family: "Delicious Handrawn", cursive;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+  list-style: none;
+}
+
+.weather-app {
+  border: 1px solid #3c4043;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 15px;
+}
+
+.cloud-icon {
+  margin-right: 10px;
+}
+
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1px;
+  position: relative;
+  top: 15px;
+  font-family: "Delicious Handrawn", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+.measurements {
+  position: relative;
+  top: -20px;
+}
+
+button {
+  position: relative;
+  right: 40px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
