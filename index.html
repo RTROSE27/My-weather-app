@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>WeatherAPP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="seach-form" id="seach-form">
+          <form>
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Search your city"
+                  id="city-input"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  class="form-control btn btn-primary w-100"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+        </form>
+        <h1 id="city">London, England</h1>
+        <ul>
+          <li id="date">Monday 00:00</li>
+          <li id="weather-description">Cloudy</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <img src="images/cloud.png" alt="Cloudy" class="cloud-icon" />
+            <span class="temperature" id="temperature-value"></span>
+            <span class="measurements">ºC</span>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> mph</li>
+            </ul>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic outlined example"
+            >
+              <button type="button" class="btn btn-outline-primary">
+                Precipitation
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Humidity
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Wind
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
