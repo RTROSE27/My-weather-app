@@ -59,6 +59,7 @@ function getCurrentLocation(event) {
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 let SearchForm = document.querySelector("#seach-form");
+let iconElement = document.querySelector("#icon");
 
 SearchForm.addEventListener("submit", handlesSubmit);
 
@@ -68,3 +69,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 searchCity("London");
 
 dateElement.innerHTML = formatDate(currentTime);
+iconElement.setAttribute("src", `https://openweathermap.org/img/wn/02d@2x.png`);
