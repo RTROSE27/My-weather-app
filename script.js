@@ -37,6 +37,12 @@ function displayWeather(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(city) {
@@ -54,17 +60,11 @@ function handlesSubmit(event) {
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
-
-  iconElement.setAttribute(
-    "src",
-    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
 }
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 let SearchForm = document.querySelector("#seach-form");
-let iconElement = document.querySelector("#icon");
 
 SearchForm.addEventListener("submit", handlesSubmit);
 
