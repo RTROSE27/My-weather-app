@@ -30,12 +30,22 @@ li {
   list-style: none;
 }
 
+li::first-letter {
+  text-transform: capitalize;
+}
+
 .weather-app {
   border: 1px solid #3c4043;
   padding: 20px;
   margin: 20px auto;
   max-width: 600px;
   border-radius: 15px;
+}
+
+.row img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
 }
 
 .icon {
