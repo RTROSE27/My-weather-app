@@ -54,6 +54,11 @@ function handlesSubmit(event) {
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
+
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let dateElement = document.querySelector("#date");
@@ -69,4 +74,3 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 searchCity("London");
 
 dateElement.innerHTML = formatDate(currentTime);
-iconElement.setAttribute("src", `https://openweathermap.org/img/wn/02d@2x.png`);
