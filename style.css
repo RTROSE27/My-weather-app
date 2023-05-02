@@ -89,3 +89,7 @@ button {
 .weather-temperature {
   font-size: 13px;
 }
+
+.weather-max {
+  color: black;
+}
