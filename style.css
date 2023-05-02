@@ -85,3 +85,7 @@ button {
 .weather-day {
   font-size: 16px;
 }
+
+.weather-temperature {
+  font-size: 13px;
+}
