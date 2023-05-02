@@ -28,7 +28,8 @@ function formatDate(date) {
 function displayForecast() {
   let forcastElement = document.querySelector("#forecast");
 
-  forcastElement.innerHTML = `
+  let forecastHTML = "";
+  forcastHTML = `
   <div class="weather-forecast" id="forecast">
           <div class="row">
             <div class="col-2">
@@ -46,6 +47,7 @@ function displayForecast() {
           </div>
         </div>
   `;
+  forcastElement.innerHTML = forecastHTML;
 }
 
 function displayWeather(response) {
