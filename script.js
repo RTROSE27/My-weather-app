@@ -25,6 +25,29 @@ function formatDate(date) {
   return `${days[dayList]} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forcastElement = document.querySelector("#forecast");
+
+  forcastElement.innerHTML = `
+  <div class="weather-forecast" id="forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-day">MON</div>
+              <img
+                src="https://openweathermap.org/img/wn/04d@2x.png"
+                alt=""
+                width="36"
+              />
+              <div class="weather-temperature">
+                <span class="weather-max"> 15º </span>
+                <span class="weather-min"> 8º </span>
+              </div>
+            </div>
+          </div>
+        </div>
+  `;
+}
+
 function displayWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature-value").innerHTML = Math.round(
@@ -72,5 +95,6 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("London");
+displayForecast();
 
 dateElement.innerHTML = formatDate(currentTime);
