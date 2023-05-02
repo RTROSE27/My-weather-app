@@ -32,7 +32,6 @@ function displayForecast() {
   forecastHTML =
     forecastHTML +
     `
-  <div class="weather-forecast" id="forecast">
             <div class="col-2">
               <div class="weather-day">MON</div>
               <img
@@ -51,7 +50,6 @@ function displayForecast() {
   forecastHTML =
     forecastHTML +
     `
-  <div class="weather-forecast" id="forecast">
             <div class="col-2">
               <div class="weather-day">MON</div>
               <img
