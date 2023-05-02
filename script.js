@@ -33,7 +33,7 @@ function displayForecast() {
     forecastHTML +
     `
             <div class="col-2">
-              <div class="weather-day">MON</div>
+              <div class="weather-day">TUES</div>
               <img
                 src="https://openweathermap.org/img/wn/04d@2x.png"
                 alt=""
@@ -49,7 +49,7 @@ function displayForecast() {
     forecastHTML +
     `
             <div class="col-2">
-              <div class="weather-day">MON</div>
+              <div class="weather-day">TUES</div>
               <img
                 src="https://openweathermap.org/img/wn/04d@2x.png"
                 alt=""
