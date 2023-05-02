@@ -26,7 +26,7 @@ function formatDate(date) {
 }
 
 function displayForecast() {
-  let forcastElement = document.querySelector("#forecast");
+  let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = "";
   forecastHTML = `
