@@ -29,7 +29,7 @@ function displayForecast() {
   let forcastElement = document.querySelector("#forecast");
 
   let forecastHTML = "";
-  forcastHTML = `
+  forecastHTML = `
   <div class="weather-forecast" id="forecast">
           <div class="row">
             <div class="col-2">
@@ -47,7 +47,7 @@ function displayForecast() {
           </div>
         </div>
   `;
-  forcastElement.innerHTML = forecastHTML;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function displayWeather(response) {
