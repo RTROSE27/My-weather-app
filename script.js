@@ -25,9 +25,7 @@ function formatDate(date) {
   return `${days[dayList]} ${hours}:${minutes}`;
 }
 
-function displayForecast(response) {
-  let forecast = response.data.daily;
-
+function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
