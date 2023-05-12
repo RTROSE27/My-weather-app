@@ -26,26 +26,24 @@ function formatDate(date) {
 }
 
 function displayForecast(response) {
-  let forecast = response.data.daily;
-
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-
-  forecast.forEach(function (forecastDay) {
+  let days = ["TUE", "WED", "THU", "FRI", "SAT", "SUN", "MON"];
+  days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       `
             <div class="col-2">
-              <div class="weather-day">${forecastDay.dt}</div>
+              <div class="weather-day">${day}</div>
               <img
                 src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
                 alt=""
                 width="36"
               />
               <div class="weather-temperature">
-                <span class="weather-max"> ${forecastDay.temp.max}º </span>
-                <span class="weather-min"> ${forecastDay.temp.min}º </span>
+                <span class="weather-max"> 15º </span>
+                <span class="weather-min"> 8º </span>
               </div>
             </div>
   `;
