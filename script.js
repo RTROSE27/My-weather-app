@@ -31,7 +31,6 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["TUE", "WED", "THU", "FRI", "SAT", "SUN", "MON"];
 
   forecast.forEach(function (forecastDay) {
     forecastHTML =
@@ -40,7 +39,7 @@ function displayForecast(response) {
             <div class="col-2">
               <div class="weather-day">${forecastDay.dt}</div>
               <img
-                src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}2x.png"
+                src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
                 alt=""
                 width="36"
               />
