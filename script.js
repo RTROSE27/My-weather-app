@@ -37,7 +37,7 @@ function displayForecast() {
             <div class="col-2">
               <div class="weather-day">${day}</div>
               <img
-                src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
+                src="https://openweathermap.org/img/wn/04d@2x.png"
                 alt=""
                 width="36"
               />
