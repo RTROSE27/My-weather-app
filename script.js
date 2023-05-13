@@ -97,19 +97,11 @@ function handlesSubmit(event) {
   searchCity(city);
 }
 
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 let SearchForm = document.querySelector("#seach-form");
 
 SearchForm.addEventListener("submit", handlesSubmit);
-
-let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("London");
 
