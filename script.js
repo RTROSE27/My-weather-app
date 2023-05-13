@@ -25,6 +25,8 @@ function formatDate(date) {
   return `${days[dayList]} ${hours}:${minutes}`;
 }
 
+function formatDay(date) {}
+
 function displayForecast(response) {
   let forecast = response.data.daily;
 
@@ -37,9 +39,11 @@ function displayForecast(response) {
       forecastHTML +
       `
             <div class="col-2">
-              <div class="weather-day">${forecastDay.dt}</div>
+              <div class="weather-day">${formatDay(forecastDay.dt)}</div>
               <img
-                src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+                src="https://openweathermap.org/img/wn/${
+                  forecastDay.weather[0].icon
+                }@2x.png"
                 alt=""
                 width="36"
               />
